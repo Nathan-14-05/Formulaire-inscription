@@ -1,0 +1,74 @@
+/* DISPLAY */
+/* BLOCK : L'élement prend toute la largeur (la ligne n'est que pour lui et personne d'autres*/ 
+/* INLINE BLOCK : l’élément est sur la même ligne, mais tu peux lui donner une largeur, une hauteur, des marges/paddings */ 
+/* INLINE : l'élément ne prend que la place de son contenu (on ne peut pas modifié sa largeur ou sa hauteur) */
+/* FLEX : l'élément devient un conteneur flex (ont utilise après : justify-content, align-items...) */
+/* INLINE FLEX : meme chose que flex mais en restant sur la meme ligne */
+
+label { 
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+}
+
+body {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px auto; /* 50px en haut et en bas et auto c'est pour qu'il se centre automatiquement */
+    /* margin : espacement ext | padding : espacement int */
+    background: #f4f7f8;
+    padding: 20px;
+    color: #1abc9c;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    border-radius: 7px;
+    padding: 10px;
+    width: 60%;
+    background-color: #ffff;
+    margin: 8px;
+}
+
+button {
+    position: relative;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid #16a085;
+    border-radius: 7px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+
+/* STYLISONS LA BAR DE NAVIGATION */
+
+ul {
+    list-style-type: none; /* pôur enlever les puces */
+    padding: 20px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #333;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    margin: 54px;
+    
+}
+
+li a {   /* Sa veut dire pour les balises a qui existe dans li */
+    color: white;
+    padding: 20px;
+    margin: 40px;
+}
